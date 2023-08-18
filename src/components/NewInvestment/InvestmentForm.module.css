@@ -6,7 +6,7 @@
     background: linear-gradient(180deg, #307e6c, #2b996d);
 }
 
-.inputGroup {
+.input-group {
     display: flex;
     justify-content: space-evenly;
     gap: 1.5rem;
@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 
-button:hover {
+.button:hover {
     background: linear-gradient(180deg, #1b5346, #113c32);
 }
 

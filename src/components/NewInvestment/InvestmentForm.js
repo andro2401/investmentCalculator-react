@@ -15,7 +15,7 @@ const InvestmentForm = (props) => {
         setUserInput((prevInput) => {
             return {
                 ...prevInput,
-                [input]: value,
+                [input]: +value,
             }
         })
     }
@@ -29,7 +29,7 @@ const InvestmentForm = (props) => {
     }
     return (
         <form className={styles.form} onSubmit={submitHandler}>
-            <div className={styles.inputGroup}>
+            <div className={styles['input-group']}>
                 <p>
                     <label htmlFor="current-savings">Current Savings ($)</label>
                     <input
@@ -49,7 +49,7 @@ const InvestmentForm = (props) => {
                             inputChangeHandler('yearly-contribution', event.target.value)} />
                 </p>
             </div>
-            <div className={styles.inputGroup}>
+            <div className={styles['input-group']}>
                 <p>
                     <label htmlFor="expected-return">
                         Expected Interest (%, per year)
